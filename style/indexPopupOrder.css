@@ -1,0 +1,242 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.main-popup-order {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.main-popup-order__content {
+  padding: 20px 100px;
+  width: 600px;
+  background: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.main-popup-order__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.main-popup-order__subtitle {
+  margin-top: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.main-popup-order__form {
+  margin-top: 20px;
+}
+
+.main-popup-order__form_input > input {
+  outline: none;
+  padding: 10px 95px 10px 20px;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  border: none;
+  background: #f4f4f4;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.main-popup-order__form_input:not(:first-child) {
+  margin-top: 20px;
+}
+
+.main-popup-order__form_textarea {
+  margin-top: 20px;
+}
+
+.main-popup-order__form_textarea > textarea {
+  outline: none;
+  padding: 12.47px 20px;
+  width: 100%;
+  height: 130px;
+  font-size: 14px;
+  border: none;
+  background: #f4f4f4;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.main-popup-order__form_btn {
+  margin-top: 30px;
+}
+
+.main-popup-order__form_btn > button {
+  cursor: pointer;
+  width: 200px;
+  height: 35.1px;
+  border: none;
+  font-size: 16px;
+  background: linear-gradient(93.44deg, #ed46be 5.12%, #486ac0 100%);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 1000px;
+  color: #fff;
+}
+
+@media (max-width: 1280px) {
+  .main-popup-order__content {
+    width: 560px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-popup-order__title {
+    font-size: 21px;
+  }
+
+  .main-popup-order__subtitle {
+    font-size: 14px;
+  }
+
+  .main-popup-order__form_input > input {
+    font-size: 13px;
+  }
+
+  .main-popup-order__form_textarea > textarea {
+    font-size: 13px;
+  }
+
+  .main-popup-order__form_btn > button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 926px) {
+  .main-popup-order {
+    padding: 25px 0;
+    position: relative;
+  }
+}
+
+@media (max-width: 660px) {
+  .main-popup-order__content {
+    padding: 20px 80px;
+    width: 523px;
+  }
+}
+
+@media (max-width: 568px) {
+  .main-popup-order__content {
+    padding: 20px 70px;
+    width: 468px;
+  }
+
+  .main-popup-order__form_input > input {
+    padding: 10px 54px 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-popup-order__content {
+    width: 448px;
+  }
+}
+
+@media (max-width: 428px) {
+  .main-popup-order {
+    position: fixed;
+  }
+
+  .main-popup-order__content {
+    padding: 20px 52px;
+    width: 390px;
+  }
+
+  .main-popup-order__title {
+    font-size: 18px;
+  }
+
+  .main-popup-order__subtitle {
+    font-size: 11px;
+  }
+
+  .main-popup-order__form_input > input {
+    font-size: 12px;
+  }
+
+  .main-popup-order__form_textarea > textarea {
+    font-size: 12px;
+  }
+
+  .main-popup-order__form_btn {
+    margin-top: 15px;
+  }
+
+  .main-popup-order__form_btn > button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 390px) {
+  .main-popup-order__form_input > input {
+    padding: 10px 20px 10px 20px;
+  }
+
+  .main-popup-order__content {
+    width: 365px;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-popup-order__content {
+    width: 335px;
+  }
+
+  .main-popup-order__form_input > input {
+    font-size: 10px;
+  }
+
+  .main-popup-order__form_textarea > textarea {
+    font-size: 10px;
+  }
+
+  .main-popup-order__form_btn > button {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-popup-order__content {
+    width: 290px;
+  }
+
+  .main-popup-order__title {
+    font-size: 15px;
+  }
+
+  .main-popup-order__subtitle {
+    margin-top: 3px;
+    font-size: 7px;
+  }
+
+  .main-popup-order__form_input > input {
+    height: 35px;
+  }
+
+  .main-popup-order__form_btn > button {
+    width: 186px;
+  }
+}
